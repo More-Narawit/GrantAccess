@@ -1,11 +1,11 @@
-import './GrantAccess.css'
+import './GrantRight.css'
 import Table from 'react-bootstrap/Table';
 import Expandable from './Expandable'
 import { data } from '../Data/data'
 import ExpandableButton from './ExpandableButton';
 import useOpenController from '../Hooks/useOpenController';
 
-function GrantAccess() {
+function GrantRight() {
     const { isOpen, toggle } = useOpenController(false);
 
     return (
@@ -77,4 +77,4 @@ function GrantAccess() {
     )
 }
 
-export default GrantAccess
+export default GrantRight

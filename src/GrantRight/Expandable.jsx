@@ -1,5 +1,3 @@
-
-
 function Expandable({data}) {
 
   

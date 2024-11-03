@@ -1,4 +1,4 @@
-import './GrantAccess.css'
+import './GrantRight.css'
 import React from 'react'
 
 function ExpandableButton({ isOpen, toggle }) {

@@ -3,14 +3,14 @@ import './App.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
-import GrantAccess from './GrantAccess/GrantAccess'
+import GrantRight from './GrantRight/GrantRight'
 
 function App() {
   
 
   return (
     <div className="app-container">
-      <GrantAccess />
+      <GrantRight />
     </div>
   )
 }
