@@ -1,4 +1,4 @@
-import './Expandable.css'
+
 
 function Expandable({data}) {
 
