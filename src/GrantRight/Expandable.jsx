@@ -1,16 +1,16 @@
-function Expandable({data}) {
-
-  
+function Expandable({ data, isOpen }) {
   return (
-    <>
-      <tr>
-        <td></td>
-        <td>{data.name}</td>
-        <td className='text-center'>{data.role}</td>
-        <td></td>
-      </tr>
-    </>
-  )
+      <>
+          {isOpen && (
+              <tr>
+                  <td></td>
+                  <td>{data.name}</td>
+                  <td className='text-center'>{data.role}</td>
+                  <td></td>
+              </tr>
+          )}
+      </>
+  );
 }
 
-export default Expandable
+export default Expandable;

@@ -1,12 +1,19 @@
-import './GrantRight.css'
+import './GrantRight.css';
 import Table from 'react-bootstrap/Table';
-import Expandable from './Expandable'
-import { data } from '../Data/data'
+import Expandable from './Expandable';
+import { data } from '../Data/data';
 import ExpandableButton from './ExpandableButton';
-import useOpenController from '../Hooks/useOpenController';
+import { useState } from 'react';
 
 function GrantRight() {
-    const { isOpen, toggle } = useOpenController(false);
+    const [openRows, setOpenRows] = useState({}); // ใช้อ็อบเจ็กต์ในการเก็บสถานะของแต่ละแถว
+
+    const toggleRow = (row) => {
+        setOpenRows((prevState) => ({
+            ...prevState,
+            [row]: !prevState[row], // สลับสถานะของแถวที่เลือก
+        }));
+    };
 
     return (
         <div className="grantAccess-container">
@@ -26,55 +33,40 @@ function GrantRight() {
                             <td>Super Admin</td>
                             <td>สามารถจัดการสิทธิ สามารถอนุมัติเอกสารของAdminที่เข้ามา</td>
                             <td className='text-center'>1</td>
-                            <td className="drop"><span className="bi bi-box-arrow-right"></span>&nbsp;&nbsp;&nbsp;<ExpandableButton isOpen={isOpen} toggle={toggle}/></td>
+                            <td className="drop">
+                                <ExpandableButton isOpen={openRows["Super Admin"]} toggle={() => toggleRow("Super Admin")} />
+                            </td>
                         </tr>
-                        {
-                        data.map((data, index) => {
-                            //filter super admin
-                            if (data.role === "Super Admin"){
-                                return (
-                                    <Expandable key={index} data={data} />
-                                )
-                            }
-                        })
-                        }
+                        {data.filter(item => item.role === "Super Admin").map((data, index) => (
+                            <Expandable key={index} data={data} isOpen={openRows["Super Admin"]}/>
+                        ))}
                         <tr>
                             <td>Admin</td>
                             <td>สามารถเข้าถึงการใช้ของฟังก์ชั่นการอนุมัติเอกสารของOfficerที่เข้ามา สามารถอัปโหลดเอกสาร และสามารถดาวน์โหลดเอกสารได้</td>
                             <td className='text-center'>10</td>
-                            <td className="drop"><ExpandableButton isOpen={isOpen} toggle={toggle}/></td>
+                            <td className="drop">
+                                <ExpandableButton isOpen={openRows["Admin"]} toggle={() => toggleRow("Admin")} />
+                            </td>
                         </tr>
-                        {
-                        data.map((data, index) => {
-                            //filter admin
-                            if (data.role === "Admin"){
-                                return (
-                                    <Expandable key={index} data={data}/>
-                                )
-                            }
-                        })
-                        }
+                        {data.filter(item => item.role === "Admin").map((data, index) => (
+                            <Expandable key={index} data={data} isOpen={openRows["Admin"]}/>
+                        ))}
                         <tr>
                             <td>Officer</td>
                             <td>สามารถเข้าถึงการอัปโหลดเอกสาร และสามารถดาวน์โหลดเอกสารได้</td>
                             <td className='text-center'>50</td>
-                            <td className="drop"><ExpandableButton isOpen={isOpen} toggle={toggle}/></td>
+                            <td className="drop">
+                                <ExpandableButton isOpen={openRows["Officer"]} toggle={() => toggleRow("Officer")} />
+                            </td>
                         </tr>
-                        {
-                        data.map((data, index) => {
-                            //filter officer
-                            if (data.role === "Office"){
-                                return (
-                                    <Expandable key={index} data={data}/>
-                                )
-                            }
-                        })
-                        }
+                        {data.filter(item => item.role === "Officer").map((data, index) => (
+                            <Expandable key={index} data={data} isOpen={openRows["Officer"]} />
+                        ))}
                     </tbody>
                 </Table>
             </div>
         </div>
-    )
+    );
 }
 
-export default GrantRight
+export default GrantRight;

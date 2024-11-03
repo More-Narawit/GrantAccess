@@ -22,12 +22,12 @@ export const data =[
 		name: "Quintessa Santos",
 		password: "24296735",
 		id: 4,
-		role: "Office"
+		role: "Officer"
 	},
 	{
 		name: "Jelani Albert",
 		password: "262357",
 		id: 5,
-		role: "Office"
+		role: "Officer"
 	}
 ]
