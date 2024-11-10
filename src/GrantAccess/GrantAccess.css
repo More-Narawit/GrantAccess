@@ -1,0 +1,68 @@
+.grantAccess-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.grantAccess-table{
+    width: 100%;
+    overflow-y: auto;
+    align-items: start;
+    margin: 1rem;
+}
+
+.drop{
+    text-align: right;
+    cursor: pointer;
+}
+
+.search-bar{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    height: 2.5rem;
+    padding: 0.15px;
+    box-shadow: 0px 0px 8px #ddd;
+}
+
+.bi-search{
+    margin-left: 0.5rem;
+}
+
+.DataInput{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    width: 92%;
+    padding: 0.5rem;
+}
+
+.DataInput:focus{
+    outline: none;
+}
+
+.search-bar-results{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px #ddd;
+    border-radius: 10px;
+    margin-top: 1rem;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.search-bar-results-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+.search-bar-results-item:hover{
+    background-color: #ddd;
+}

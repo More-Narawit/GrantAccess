@@ -1,3 +1,4 @@
+import './GrantAccess.css';
 function Expandable({ data, isOpen }) {
   return (
       <>
