@@ -1,5 +1,5 @@
 {
-  "name": "grantaccess",
+  "name": "doc-library",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,11 @@
     "bootstrap-icons": "^1.11.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router": "^6.27.0",
+    "react-router-bootstrap": "^0.26.3",
+    "react-router-dom": "^6.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",

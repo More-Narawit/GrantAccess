@@ -1,0 +1,9 @@
+.bin-container {
+    /* text-align: center; */
+    border: 1px solid none;
+}
+
+.bin-header-content {
+    text-align: center;
+    margin: 1rem;
+}

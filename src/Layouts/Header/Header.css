@@ -1,0 +1,26 @@
+.Header-container {
+    display: flex;
+    justify-content: space-between; /* จัดตำแหน่งให้องค์ประกอบซ้ายและขวา */
+    align-items: center; /* จัดตำแหน่งให้อยู่ตรงกลางในแนวตั้ง */
+    padding: 10px; /* เพิ่ม padding เพื่อให้ดูสวยงาม */
+    /*border-bottom: 1px solid black;  เพิ่มเส้นกรอบเฉพาะด้านล่าง */
+}
+
+.Right-Box {
+    display: flex;
+    justify-content: end;
+    align-items: flex-start; /* กำหนดให้องค์ประกอบภายในอยู่บนสุด */
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.search-container{
+    padding: 5px;
+    
+}
+img{
+    width: 180px;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,170 @@
+/* Container */
+.container {
+    width: 100%;
+    max-width: 30rem; /* ลดขนาดสูงสุดให้เล็กลง */
+    margin: 0 auto;
+    padding: 0.625rem; /* ลด padding */
+    background-color: #ff9900;
+    box-sizing: border-box;
+    border-radius: 0.3125rem; /* ลด border-radius */
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.625rem; /* ลดระยะห่าง */
+    gap: 0.3125rem; /* ลด gap */
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem; /* ลด padding */
+    background-color: #ff7300;
+    border-radius: 0.3125rem; /* ลด border-radius */
+    font-size: 1rem; /* ลดขนาดฟอนต์ */
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown {
+    padding: 0.3125rem; /* ลด padding */
+    font-size: 0.875rem; /* ลดขนาดฟอนต์ */
+    background-color: #ffffff;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+}
+
+/* Document List */
+.document-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem; /* ลด gap */
+    margin-top: 0.625rem; /* ลดระยะห่าง */
+}
+
+.document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem; /* ลด padding */
+    background-color: #ffffff;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem; /* ลดขนาดฟอนต์ */
+}
+
+.document-name {
+    flex-grow: 1;
+}
+
+.icons {
+    display: flex;
+    gap: 0.3125rem;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    font-size: 0.875rem; 
+    cursor: pointer;
+    color: #333;
+}
+
+.icon-check {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.icon-delete {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+}
+
+.icon-info {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.pagination-button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.pagination-text {
+    font-size: 1rem; /* ลดขนาดฟอนต์ */    
+}
+
+/* Popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-container {
+    width: 25rem; /* ลดความกว้าง */
+    padding: 1rem; /* ลด padding */
+    background-color: #f4a261;
+    border-radius: 0.3125rem; /* ลด border-radius */
+    text-align: center;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-header {
+    background-color: #f4a261;
+    font-size: 1rem; /* ลดขนาดฟอนต์ */
+    font-weight: bold;
+    padding: 0.3125rem 0; /* ลด padding */
+}
+
+.reason-input {
+    width: 80%; /* ลดความกว้าง */
+    height: 4.6875rem; /* ลดความสูง */
+    border-radius: 0.3125rem;
+    padding: 0.3125rem; /* ลด padding */
+    border: 0.0625rem solid #ccc;
+    font-size: 0.875rem; /* ลดขนาดฟอนต์ */
+    resize: none;
+    background-color: #fff7e6;
+    margin: 0.3125rem 0; /* ลดระยะห่าง */
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.3125rem;
+    margin-top: 0.625rem;
+}
+
+.popup-button {
+    padding: 0.3125rem 0.625rem; /* ลด padding */
+    font-size: 0.875rem; /* ลดขนาดฟอนต์ */
+    cursor: pointer;
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+.popup-cancel {
+    background-color: #e76f51;
+    color: white;
+}
+
+.popup-confirm {
+    background-color: #2a9d8f;
+    color: white;
+}

@@ -1,0 +1,43 @@
+/* GrantAccess styles */
+
+
+.grantAccess-container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 700px;
+}
+
+.title{
+    text-align: center;
+}
+
+.drop{
+    text-align: right;
+    cursor: pointer;
+}
+
+/*EditButton styles*/
+.profile{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3125rem;
+}
+
+.profile label {
+    font-weight: bold;
+  }
+  
+  .profile select {
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+.role-select{
+    margin-right: 1rem;
+}
+.logout{
+    text-align: right;
+}
+

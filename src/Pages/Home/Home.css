@@ -1,0 +1,37 @@
+h4{
+ padding: 10px;
+}
+div h2{
+    color: #ffffff;;
+    padding: 5px;
+}
+.Filter-container{
+    border: 1px solid black  ;
+    border-radius: 5px;
+    margin: 0px 0.5rem 0.5rem 0.5rem;
+    height: 300px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: black 2px 2px 0.5px;
+}
+.File-container{
+    /* border: 1px solid black  ; */
+    border-radius: 5px;
+    margin: 0px 0.5rem 0.5rem 0.5rem;
+    height: 250px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: black 1px 1px 4px
+
+}
+.File-container h2{
+    border-radius: 5px;
+    background: #ff9100;
+}
+.Filter-container h2{
+    background: #ff9100;
+}
+.Data-container{
+    border: 1px dashed rgb(255, 0, 0)  ;
+    height: 220px;
+}
